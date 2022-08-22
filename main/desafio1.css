@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+
+:root {
+    --card-color: #fff;
+    --titleCard: #787491;
+    --iconAndValue: #18161F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:#D6D4E2;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 270px;
+    height: 300px;
+    padding: 32px 24px;
+    background-color: var(--card-color);
+    border-radius: 32px;
+    color: #18161F;
+}
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+.titleContent{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 12px;
+    color: var(--titleCard);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+.valuePix{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 90px;
+}
+.card:hover{
+    background-color: var(--iconAndValue);
+    color: #fff;
+    
+}
+.cardContent:hover path{
+    stroke: var(--card-color);
+}
